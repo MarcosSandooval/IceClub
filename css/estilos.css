@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Kanit:wght@500&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Kanit:wght@500&family=Open+Sans&family=Rubik+Dirt&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Inicio */
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.titulo-principal{
+    color: rgb(104, 104, 104);
+    font-family: 'Kanit', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header{
+    background-color: rgb(227, 235, 234);
+    margin-bottom: 60px;
+}
+.logo-header{
+    width: 60px;
+    height: 60px;
+}
+
+.contenedor-flexbox{
+    display: flex;
+    background-color: rgb(209, 209, 189);
+    padding: 10px;
+    margin: 20px 20px 20px 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.caja{
+    text-decoration: none;
+    width: 500px;
+    height: 500px;
+    border: 4px solid rgb(79, 79, 80);
+    text-align:center;
+    line-height: 500px;
+    margin: auto;
+}
+.caja1{
+    background-image: url(../images/imagen-zapatillas.jpeg);
+    background-size: cover;
+    
+}
+.caja2{
+    background-image: url(../images/imagen-indumentaria.jpeg);
+    background-size: cover;
+}
+.ropa{
+    font-family: 'Dangrek', cursive;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 50px;
+    color: black;
+
+}
+.caja a:hover{
+    text-decoration:  underline;
+    transition: all 1s;
+}
+
+.contenedor-secundario{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+.titulo-secundario{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer{
+    text-align: center;
+    background-color: rgb(8, 248, 248);
+    margin: auto;
+    
+}
+.logo-footer{
+    height: 30px;
+    width: 30px;
+}
+
+/* Zapatillas e Indumentaria*/
+.titulo-seccions{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Rubik Dirt', cursive;
+}
+.row{
+    border: 3px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center
+    ;
+
+}
+.estilo{
+    margin: 15px;
+    padding: 20px;
+}
+.estilo a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.estilo a:hover{
+    text-decoration: underline;
+}
+.estilo .imagen-container{
+    overflow: hidden;
+}
+.estilo .imagen-container img{
+    width: 50%;
+    transition: all 1s;
+}
+.estilo:hover .imagen-container img{
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:900px){
+
+
+    .contenedor-flexbox{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+}
