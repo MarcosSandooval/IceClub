@@ -75,11 +75,17 @@ header{
     margin-left: 50px;
     margin-right: 50px;
     padding: 40px;
-    background-color: rgba(0, 0, 0, 0.507);
+
 }
 .titulo-secundario{
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+.parrafo-secundario{
+    text-align: center;
+    font-size: 25px;
+    top: 50%;
 }
 footer{
     text-align: center;
@@ -136,12 +142,37 @@ footer{
     transform: scale(1.2);
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:320px){
+/* Inicio vista mobile */
 
-
+    .titulo-principal{
+        font-size: 30px;
+    }
     .contenedor-flexbox{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 20px 20px 20px 20px;
+        background-color: aliceblue;
 }
+    .caja{
+        height: 150px;
+        width: 150px;
+        line-height: 150px;
+    }
+    .ropa{
+        font-size: 20px;
+    }
+    .contenedor-secundario{
+        text-align: center;
+        padding: auto;
+        margin: 50px;
+
+    }
+    .titulo-secundario{
+        font-size: 15px;
+    }
+    .parrafo-secundario{
+        font-size: 10px;
+    }
 }
