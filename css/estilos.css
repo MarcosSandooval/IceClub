@@ -106,9 +106,9 @@ footer{
 }
 .row{
     border: 3px solid black;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-right: 20px;
-    width: 90%;
+    width: 94%;
     height: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -142,7 +142,7 @@ footer{
     transform: scale(1.2);
 }
 
-@media screen and (max-width:320px){
+@media screen and (max-width:380px){
 /* Inicio vista mobile */
 
     .titulo-principal{
@@ -170,9 +170,41 @@ footer{
 
     }
     .titulo-secundario{
-        font-size: 15px;
+        font-size: 17px;
     }
     .parrafo-secundario{
+        font-size: 12px;
+    }
+    footer{
+        background-color: rgba(100, 243, 253, 0.753);
+    }
+    .logo-footer{
+        width: 11px;
+        height: 11px;
+    }
+    .titulo-final{
         font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    /* Zapatillas e Indumentaria vista Mobile */
+
+    .titulo-seccions{
+        font-size: 30px;
+    }
+    .row{
+        grid-template-columns: auto auto;
+        margin: auto;
+        border: none;
+
+    }
+    .estilo .imagen-container img{
+        width: 100px;
+        height: 80px;
+    }
+    .estilo p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 9px;
+        text-align: center;
     }
 }
