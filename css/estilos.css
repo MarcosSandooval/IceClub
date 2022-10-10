@@ -89,8 +89,7 @@ header{
 }
 footer{
     text-align: center;
-    background-color: rgb(8, 248, 248);
-    margin: auto;
+    margin-top: 30px;
     
 }
 .logo-footer{
@@ -146,7 +145,7 @@ footer{
 /* Inicio vista mobile */
 
     .titulo-principal{
-        font-size: 30px;
+        font-size: 20px;
     }
     .contenedor-flexbox{
         flex-direction: column;
@@ -174,9 +173,6 @@ footer{
     }
     .parrafo-secundario{
         font-size: 12px;
-    }
-    footer{
-        background-color: rgba(100, 243, 253, 0.753);
     }
     .logo-footer{
         width: 11px;
@@ -240,9 +236,6 @@ footer{
     }
     .parrafo-secundario{
         font-size: 12px;
-    }
-    footer{
-        background-color: rgba(100, 243, 253, 0.753);
     }
     .logo-footer{
         width: 30px;
