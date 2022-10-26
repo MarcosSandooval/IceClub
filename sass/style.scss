@@ -4,16 +4,7 @@
 @import "index";
 @import "ropa";
 @import "footer";
-
-
-
-/* Inicio */
-
-
-
-
-/* Zapatillas e Indumentaria*/
-
+@import "contacto";
 
 @media screen and (max-width:380px){
 /* Inicio vista mobile */
@@ -76,6 +67,23 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 9px;
         text-align: center;
+    }
+}
+@media(min-width: 700px) {
+    .body_contacto {
+        padding: 60px 4em;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
     }
 }
 @media screen and (max-width:1024px){
