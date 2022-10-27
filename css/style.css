@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dangrek&family=Kanit:wght@500&family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dangrek&family=Kanit:wght@500&family=Open+Sans&family=Rubik+Dirt&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 * {
   margin: 0%;
   padding: 0%;
@@ -44,9 +45,9 @@ header {
 
 .caja {
   text-decoration: none;
-  width: 50vh;
-  height: 50vh;
-  border: 4px solid rgb(79, 79, 80);
+  width: 500px;
+  height: 500px;
+  border: 5px solid rgb(79, 79, 80);
   text-align: center;
   line-height: 500px;
   margin: auto;
@@ -82,20 +83,20 @@ header {
 }
 
 .titulo-secundario {
-  font-size: 30px;
+  font-size: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   position: relative;
 }
 
 .parrafo-secundario {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   top: 50%;
 }
 
 .titulo-seccions {
   text-align: center;
-  font-size: 45px;
+  font-size: 50px;
   font-family: "Rubik Dirt", cursive;
 }
 
@@ -105,7 +106,7 @@ header {
   width: 94%;
   height: 100%;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-content: space-between;
   text-align: center;
@@ -118,7 +119,8 @@ header {
 .estilo a {
   text-decoration: none;
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
 }
 .estilo a p:hover {
   text-decoration: underline;
@@ -246,4 +248,31 @@ ul {
 .contact-info h4, .contact-info ul, .contact-info p {
   text-align: center;
   margin: 0 0 1rem 0;
+}
+
+.body_tiendas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  padding: 200px 2.5rem;
+  background-image: url(../images/stores.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+}
+
+.store-text {
+  margin: 4.5rem;
+  padding: 100px 0px 100px 100px;
+  font-size: 2.5rem;
+  color: aliceblue;
+}
+
+.titulo-tiendas {
+  font-size: 4.5rem;
+  font-family: "Permanent Marker", cursive;
+  color: rgb(248, 255, 255);
 }/*# sourceMappingURL=style.css.map */
