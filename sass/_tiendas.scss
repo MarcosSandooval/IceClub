@@ -1,18 +1,13 @@
-@import "variables";
-@import "fuentes";
-@import "generales";
-@import "index";
-@import "ropa";
-@import "tiendas";
-@import "contacto";
-
-
-
+.titulo-seccions{
+    text-align: $text;
+    font-size: 50px;
+    font-family: $titulo;
+}
 .body_tiendas{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    text-align: center;
+    text-align: $text;
     align-items: center;
     margin: auto;
     padding: 200px 2.5rem;

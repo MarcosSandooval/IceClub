@@ -3,9 +3,30 @@
     padding: 0%;
     box-sizing: border-box;
 }
+header{
+    background-color: $color;
+}
+main{
+    background-color: rgb(255, 249, 249);
+}
+.logo-header{
+    width: 60px;
+    height: 60px;
+}
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: $color;
     overflow-x: hidden;
 
+}
+
+footer{
+    text-align: $text;
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+}
+
+.logo-footer{
+    height: 35px;
+    width: 35px;
 }
