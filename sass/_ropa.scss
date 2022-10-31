@@ -4,12 +4,11 @@
     font-family: $titulo;
 }
 .row{
+    @include size (100%,94%);
     background-color: white;
     margin-left: 40px;
     margin-right: 20px;
     padding-bottom: 2rem;
-    width: 94%;
-    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     align-items: center;

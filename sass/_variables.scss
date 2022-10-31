@@ -4,3 +4,10 @@ $text: center;
 $titulo: 'Rubik Dirt', cursive;
 
 
+/*mixin*/
+@mixin size ($width,$height){
+    height: $height;
+    width: $height;
+}
+
+

@@ -5,6 +5,7 @@
 @import "ropa";
 @import "tiendas";
 @import "contacto";
+@import "medias";
 
 @media screen and (min-width:380px) and (max-width:767px){
     .titulo-principal{
@@ -202,5 +203,20 @@
         font-size: 3rem;
         font-family: 'Permanent Marker', cursive;
         color: rgb(236, 243, 243);
+    }
+}
+
+@media screen and (min-width:1024px){
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
     }
 }

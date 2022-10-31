@@ -1,4 +1,5 @@
 /*Variables*/
+/*mixin*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dangrek&family=Kanit:wght@500&family=Open+Sans&display=swap");
@@ -10,7 +11,7 @@
   padding: 0%;
   box-sizing: border-box;
 }
-
+/*Index*/
 header {
   background-color: rgb(255, 255, 255);
 }
@@ -20,8 +21,8 @@ main {
 }
 
 .logo-header {
-  width: 60px;
   height: 60px;
+  width: 60px;
 }
 
 body {
@@ -58,16 +59,17 @@ footer {
 }
 
 .caja {
-  text-decoration: none;
-  width: 500px;
   height: 500px;
+  width: 500px;
+  text-decoration: none;
   border: 5px solid rgb(79, 79, 80);
   text-align: center;
   line-height: 500px;
   margin: auto;
 }
 .caja a:hover {
-  text-decoration: underline;
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
   transition: all 1s;
 }
 
@@ -108,6 +110,7 @@ footer {
   top: 50%;
 }
 
+/*Seccion Indumentaria y Zapatillas*/
 .titulo-seccions {
   text-align: center;
   font-size: 50px;
@@ -115,12 +118,12 @@ footer {
 }
 
 .row {
+  height: 94%;
+  width: 94%;
   background-color: white;
   margin-left: 40px;
   margin-right: 20px;
   padding-bottom: 2rem;
-  width: 94%;
-  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -156,12 +159,7 @@ footer {
   transform: scale(1.2);
 }
 
-.titulo-seccions {
-  text-align: center;
-  font-size: 50px;
-  font-family: "Rubik Dirt", cursive;
-}
-
+/*Seccion Tiendas*/
 .body_tiendas {
   display: flex;
   flex-direction: row;
@@ -189,11 +187,12 @@ footer {
   color: rgb(248, 255, 255);
 }
 
+/*Seccion Contacto*/
 .body_contacto {
+  height: 100%;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
   color: #fff;
   font-family: "Quicksand", sans-serif;
   padding: 100px 1.5em;
@@ -285,6 +284,7 @@ ul {
   margin: 0 0 1rem 0;
 }
 
+/*Vista mobile Index*/
 @media screen and (min-width: 380px) and (max-width: 767px) {
   .titulo-principal {
     font-size: 30px;
@@ -316,6 +316,8 @@ ul {
     font-size: 15px;
     top: 50%;
   }
+
+  /*Vista mobile Indumentaria y Zapatillas*/
   .titulo-seccions {
     font-size: 25px;
     margin-bottom: 20px;
@@ -329,6 +331,8 @@ ul {
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  /*Vista mobile Tiendas*/
   .body_tiendas {
     display: flex;
     flex-direction: column;
@@ -348,6 +352,8 @@ ul {
     font-family: "Permanent Marker", cursive;
     color: rgb(248, 255, 255);
   }
+
+  /*Vista mobile Contacto*/
   .body_contacto {
     justify-content: center;
     align-items: center;
@@ -410,6 +416,8 @@ ul {
     padding: 1em;
   }
 }
+
+/*Vista tablet Index*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .titulo-principal {
     font-size: 40px;
@@ -442,6 +450,8 @@ ul {
     font-size: 20px;
     top: 50%;
   }
+
+  /*Vista tablet Indumentaria y Zapatillas*/
   .titulo-seccions {
     font-size: 35px;
     margin-bottom: 20px;
@@ -455,6 +465,8 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  /*Vista tablet Tiendas*/
   .store-text {
     margin: 0px;
     padding: 0px;
@@ -465,5 +477,22 @@ ul {
     font-size: 3rem;
     font-family: "Permanent Marker", cursive;
     color: rgb(236, 243, 243);
+  }
+}
+/*Vista tablet Contacto es el mismo que el mobile*/
+
+/*vista portatil Contacto*/
+@media screen and (min-width: 1024px) {
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+    padding: 2em;
+  }
+  .contact-info h4,
+.contact-info ul,
+.contact-info p {
+    text-align: left;
   }
 }/*# sourceMappingURL=style.css.map */
